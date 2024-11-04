@@ -11,8 +11,6 @@
 
 using namespace std;
 
-const int MAX_EXPENSES = 100;
-
 struct Expense 
 {
     string category;
@@ -30,6 +28,7 @@ void searchExpense(const Expense*, int);
 
 int main()
 {
+    const int MAX_EXPENSES = 100;
     Expense expenses[MAX_EXPENSES];
     const int LAST_MENU_ITEM_NUMBER = 5;
     int expenseCount = 0;
@@ -153,6 +152,7 @@ bool dateValidEntry(string& date)
 
 void addExpense(Expense* expenses, int& count)
 {
+    const int MAX_EXPENSES = 100;
     if (count < MAX_EXPENSES)
     {
         cout << "Enter expense category (string): ";
