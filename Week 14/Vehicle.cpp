@@ -7,7 +7,7 @@
 
 using namespace std;
 
-Vehicle::Vehicle(const string& manufacturer, int yearBuilt) 
+Vehicle::Vehicle(const string &manufacturer, int yearBuilt) 
     : manufacturer(manufacturer), yearBuilt(yearBuilt) {}
 
 string Vehicle::getManufacturer() const {
@@ -18,7 +18,7 @@ int Vehicle::getYearBuilt() const {
     return yearBuilt;
 }
 
-void Vehicle::setManufacturer(const string& manufacturer) {
+void Vehicle::setManufacturer(const string &manufacturer) {
     this->manufacturer = manufacturer;
 }
 
