@@ -25,6 +25,16 @@ void characterTest(char, int);
 
 int main()
 {
+    characterTest('a', 1);
+
+    characterTest('a', -1);
+
+    characterTest('Z', -1);
+
+    characterTest('?', 5);
+
+    characterTest('A', 32);
+
     return 0;
 }
 
@@ -43,5 +53,12 @@ char character(char start, int offset) {
     return target;
 }
 
-
+void characterTest(char start, int offset) {
+    try {
+        cout << "character(" << start << ", " << offset << "): " << character(start, offset) << endl;
+    }
+    catch (exception& e) {
+        cout << "character(" << start << ", " << offset << "): threw an exception: " << e.what() << endl;
+    }
+}
 
