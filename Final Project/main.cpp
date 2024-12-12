@@ -94,6 +94,7 @@ void addItemsDynamically(Inventory& inventory) {
 
             cout << "Enter the material: ";
             getline(cin, material);
+            
             cout << "Enter the price: ";
             cin >> price;
 
