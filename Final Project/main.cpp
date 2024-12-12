@@ -20,11 +20,11 @@ int main() {
     while (true) {
         addItemsDynamically(myInventory);
 
-        cout << "\nYour inventory:\n";
+        cout << "\n=== Your inventory ===\n";
         myInventory.displayAll();
 
         char choice;
-        cout << "Do you want to add more items? (Y/N): ";
+        cout << "\nDo you want to add more items? (Y/N): ";
         cin >> choice;
         if (choice != 'y' && choice != 'Y') {
             break;
@@ -45,7 +45,7 @@ void addItemsDynamically(Inventory& inventory) {
         cout << "2. Book\n";
         cout << "3. Furniture\n";
         cout << STOP_ADDING_ITEMS_MENU_NUMBER << ". Stop Adding Items\n";
-        cout << "Enter your choice: ";
+        cout << "Enter your choice (1-" << STOP_ADDING_ITEMS_MENU_NUMBER << "): ";
         cin >> choice;
 
         if (cin.fail() || choice < 1 || choice > STOP_ADDING_ITEMS_MENU_NUMBER) {
@@ -57,6 +57,7 @@ void addItemsDynamically(Inventory& inventory) {
 
         if (choice == STOP_ADDING_ITEMS_MENU_NUMBER) break;
 
+        cout << endl;
         switch (choice) {
         case 1: {
             string name, brand;
@@ -69,7 +70,7 @@ void addItemsDynamically(Inventory& inventory) {
             cout << "Enter the brand: ";
             getline(cin, brand);
 
-            price = getValidPriceInput("Enter the price: ");
+            price = getValidPriceInput("Enter the price: $");
             inventory.addItem(new Electronics(name, price, brand));
             break;
         }
@@ -84,7 +85,7 @@ void addItemsDynamically(Inventory& inventory) {
             cout << "Enter the author: ";
             getline(cin, author);
 
-            price = getValidPriceInput("Enter the price: ");
+            price = getValidPriceInput("Enter the price: $");
             inventory.addItem(new Book(title, price, author));
             break;
         }
@@ -99,7 +100,7 @@ void addItemsDynamically(Inventory& inventory) {
             cout << "Enter the material: ";
             getline(cin, material);
 
-            price = getValidPriceInput("Enter the price: ");
+            price = getValidPriceInput("Enter the price: $");
             inventory.addItem(new Furniture(name, price, material));
             break;
         }
