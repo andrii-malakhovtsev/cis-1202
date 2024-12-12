@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <limits>
 #include "Item.h"
 #include "Electronics.h"
 #include "Book.h"
@@ -9,6 +10,7 @@
 using namespace std;
 
 void addItemsDynamically(Inventory&);
+double getValidPriceInput(const string&);
 
 int main() {
     Inventory myInventory;
@@ -33,9 +35,8 @@ int main() {
 }
 
 void addItemsDynamically(Inventory& inventory) {
-    
-    const int STOP_ADDING_ITEMS_MENU_NUMBER = 4;
 
+    const int STOP_ADDING_ITEMS_MENU_NUMBER = 4;
     int choice;
 
     while (true) {
@@ -46,6 +47,13 @@ void addItemsDynamically(Inventory& inventory) {
         cout << STOP_ADDING_ITEMS_MENU_NUMBER << ". Stop Adding Items\n";
         cout << "Enter your choice: ";
         cin >> choice;
+
+        if (cin.fail() || choice < 1 || choice > STOP_ADDING_ITEMS_MENU_NUMBER) {
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cout << "Invalid choice. Please, try again.\n";
+            continue;
+        }
 
         if (choice == STOP_ADDING_ITEMS_MENU_NUMBER) break;
 
@@ -61,9 +69,7 @@ void addItemsDynamically(Inventory& inventory) {
             cout << "Enter the brand: ";
             getline(cin, brand);
 
-            cout << "Enter the price: ";
-            cin >> price;
-
+            price = getValidPriceInput("Enter the price: ");
             inventory.addItem(new Electronics(name, price, brand));
             break;
         }
@@ -78,9 +84,7 @@ void addItemsDynamically(Inventory& inventory) {
             cout << "Enter the author: ";
             getline(cin, author);
 
-            cout << "Enter the price: ";
-            cin >> price;
-
+            price = getValidPriceInput("Enter the price: ");
             inventory.addItem(new Book(title, price, author));
             break;
         }
@@ -94,15 +98,31 @@ void addItemsDynamically(Inventory& inventory) {
 
             cout << "Enter the material: ";
             getline(cin, material);
-            
-            cout << "Enter the price: ";
-            cin >> price;
 
+            price = getValidPriceInput("Enter the price: ");
             inventory.addItem(new Furniture(name, price, material));
             break;
         }
         default:
-            cout << "Invalid choice. Please try again.\n";
+            cout << "Invalid choice. Please, try again.\n";
         }
     }
+}
+
+double getValidPriceInput(const string& prompt) {
+    double price;
+    while (true) {
+        cout << prompt;
+        cin >> price;
+
+        if (cin.fail() || price <= 0) {
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cout << "Invalid price. Please, enter a valid number.\n";
+        }
+        else {
+            break;
+        }
+    }
+    return price;
 }
