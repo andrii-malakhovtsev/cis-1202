@@ -3,35 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 6", "Week 6\CIS1202.vcxproj", "{F1C3FE91-6D08-44FB-82DF-BB48ED5980D5}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CIS1202 - Test Field", "Week 6\CIS1202 - Test Field.vcxproj", "{F1C3FE91-6D08-44FB-82DF-BB48ED5980D5}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 5", "Week 5\Week 5.vcxproj", "{6A342D97-E189-48B8-A0AE-15DEA77A4B65}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 5 - VIN validator", "Week 5 - VIN validator\Week 5 - VIN validator.vcxproj", "{6A342D97-E189-48B8-A0AE-15DEA77A4B65}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 4", "Week 4\Week 4.vcxproj", "{DE8875BA-E6E2-4AA8-93AE-AEC5346F9EE0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 4 - Advanced Rent Database", "Week 4 - Advanced Rent Database\Week 4 - Advanced Rent Database.vcxproj", "{DE8875BA-E6E2-4AA8-93AE-AEC5346F9EE0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 7", "Week 7\Week 7.vcxproj", "{600AAE92-FC53-4BDA-9EB4-114304A11AB1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 7 - Card Game", "Week 7 - Card Game\Week 7 - Card Game.vcxproj", "{600AAE92-FC53-4BDA-9EB4-114304A11AB1}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 1", "Week 1\Week 1.vcxproj", "{1E7E4FBB-9044-42A4-B954-8020D0FDF5CE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 1 - Product Inventory", "Week 1 - Product Inventory\Week 1 - Product Inventory.vcxproj", "{1E7E4FBB-9044-42A4-B954-8020D0FDF5CE}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 2", "Week 2\Week 2.vcxproj", "{8B300EA2-21E0-414F-8A52-32D6B26F7438}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 2 - Console Database", "Week 2 - Console Database\Week 2 - Console Database.vcxproj", "{8B300EA2-21E0-414F-8A52-32D6B26F7438}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 3", "Week 3\Week 3.vcxproj", "{3B2404F1-7A09-41CB-92CC-4218157B25CB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 3 - Rent Database", "Week 3 - Rent Database\Week 3 - Rent Database.vcxproj", "{3B2404F1-7A09-41CB-92CC-4218157B25CB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 8 (Midterm)", "Week 8 (Midterm)\Week 8 (Midterm).vcxproj", "{0890DDE9-8400-4FF5-AC76-26F4B2689639}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MidTerm Project - Expenses", "MidTerm Project - Expenses\MidTerm Project - Expenses.vcxproj", "{0890DDE9-8400-4FF5-AC76-26F4B2689639}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 9 (Source Control)", "Week 9 (Source Control)\Week 9 (Source Control).vcxproj", "{5064E17D-2BAE-492F-8FD8-7EA1790A581A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 9 - Source Control", "Week 9 - Source Control\Week 9 - Source Control.vcxproj", "{5064E17D-2BAE-492F-8FD8-7EA1790A581A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 10", "Week 10\Week 10.vcxproj", "{82AB21E6-2A49-4981-845B-F3ED28450E95}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 10 - File Inventory", "Week 10 - File Inventory\Week 10 - File Inventory.vcxproj", "{82AB21E6-2A49-4981-845B-F3ED28450E95}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 14", "Week 14\Week 14.vcxproj", "{01567E71-BB19-4249-AB9C-6E2FDC334D45}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 14 - OOP with Vehicles", "Week 14 - OOP with Vehicles\Week 14 - OOP with Vehicles.vcxproj", "{01567E71-BB19-4249-AB9C-6E2FDC334D45}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 11-13", "Week 11-13\Week 11-13.vcxproj", "{7BCF3333-345A-4D6F-A30A-4F4D56CF39F6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 11-13 - Publication Agency", "Week 11-13 - Publication Agency\Week 11-13 - Publication Agency.vcxproj", "{7BCF3333-345A-4D6F-A30A-4F4D56CF39F6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 15A", "Week 15A\Week 15A.vcxproj", "{1F3ABC4C-7286-4823-8323-9CBB33267F3E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 15A - Ranges", "Week 15A - Ranges\Week 15A - Ranges.vcxproj", "{1F3ABC4C-7286-4823-8323-9CBB33267F3E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 15B", "Week 15B\Week 15B.vcxproj", "{15A94597-31D6-4580-84B5-2AFC709D00C8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week 15B - Generic Type", "Week 15B - Generic Type\Week 15B - Generic Type.vcxproj", "{15A94597-31D6-4580-84B5-2AFC709D00C8}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Final Project", "Final Project\Final Project.vcxproj", "{FDC65DF4-B556-405E-8C52-4AC6462F71E6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Final Project - Home Inventory", "Final Project - Home Inventory\Final Project - Home Inventory.vcxproj", "{FDC65DF4-B556-405E-8C52-4AC6462F71E6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CIS1202 - Test Field", "Week 6\CIS1202 - Test Field.vcxproj", "{F1C3FE91-6D08-44FB-82DF-BB48ED5980D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
